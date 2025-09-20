@@ -1,0 +1,21 @@
+:root {
+  --orange-color: #fa7436;
+  --light-orange-color: #fe935e;
+  --black-color: #222222;
+  --grey-color: #666666;
+  --light-blue-color: #f5f9ff;
+  --slight-white-color: #fefcfb;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Bas style ends */
