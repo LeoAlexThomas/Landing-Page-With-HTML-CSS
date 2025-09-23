@@ -122,6 +122,10 @@ button {
   cursor: unset;
 }
 
+.arrow-position-end {
+  justify-content: flex-end;
+}
+
 /* Common style - ends */
 
 /* nav style - start */
@@ -390,7 +394,7 @@ header .outline-button {
   z-index: 15;
 }
 
-.offer-card-shadow {
+.card-shadow {
   box-shadow: 0px 16px 80px 0px #fe935e20;
 }
 
@@ -456,3 +460,93 @@ header .outline-button {
 }
 
 /* Offer section - end */
+
+/* Plan section - start */
+
+.plans-section {
+  padding: 120px 16px;
+  background-color: var(--slight-white-color);
+  position: relative;
+}
+
+.plans-section-tree {
+  position: absolute;
+  top: 120px;
+  left: 65%;
+}
+
+.plans-section-tree:last-child {
+  top: 125px;
+  left: 67.5%;
+}
+
+.plan-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 24px;
+}
+
+.plan-cards .plan-card {
+  background-color: #ffffff;
+  border: 2px solid #66666610;
+  border-radius: 16px;
+}
+
+.plan-cards .plan-card img {
+  width: 369px;
+  height: 327px;
+  border-radius: 16px;
+}
+
+.plan-cards .plan-card .plan-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 16px 16px;
+}
+
+.plan-cards .plan-card .plan-card-header h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--black-color);
+}
+
+.plan-cards .plan-card .plan-card-header p {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--orange-color);
+}
+
+.plan-cards .plan-card .plan-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 16px 24px;
+}
+
+.plan-cards .plan-card .plan-card-info .plan-duration {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+}
+
+.plan-cards .plan-card .plan-card-info .plan-duration p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+
+.plan-cards .plan-card .plan-card-info .plan-duration img {
+  width: 16px;
+  height: 16px;
+}
+
+.plan-cards .plan-card .plan-card-info .ratings img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Plan section - end */
