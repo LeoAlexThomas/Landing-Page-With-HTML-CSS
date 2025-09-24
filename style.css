@@ -720,6 +720,7 @@ header .outline-button {
 .blog-section {
   background-color: var(--slight-white-color);
   padding: 120px 16px;
+  margin-bottom: 170px;
 }
 
 .blog-section .section-header {
@@ -761,6 +762,14 @@ header .outline-button {
 
 /* Subscribe section - start */
 
+.subscription-placement {
+  position: absolute;
+  top: -200px;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 .subscribe-section {
   background-color: var(--orange-color);
   border-radius: 16px;
@@ -771,6 +780,8 @@ header .outline-button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  width: 100%;
 }
 
 .subscribe-section .section-header {
@@ -834,3 +845,104 @@ header .outline-button {
 }
 
 /* Subscribe section - end */
+
+/* footer section - start */
+
+footer {
+  position: relative;
+  background-color: var(--light-blue-color);
+  z-index: 1;
+}
+
+.footer-section .footer-lists {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr 2fr;
+  padding: 325px 16px 40px 16px;
+}
+
+.footer-list-head {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  color: var(--black-color);
+  margin-bottom: 32px;
+}
+
+.footer-section .footer-lists .footer-intro p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  max-width: 255px;
+  margin-bottom: 16px;
+  color: var(--grey-color);
+}
+
+.footer-section .footer-lists .footer-intro .social-icons {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.footer-section .footer-lists .footer-intro .social-icons a {
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  box-shadow: 0px 2px 10px #00000010;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section .footer-lists .footer-intro .social-icons a:nth-child(2) {
+  width: 48px;
+  height: 48px;
+  background-color: var(--orange-color);
+}
+
+.footer-section .footer-lists .footer-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section .footer-lists .footer-list ul li {
+  margin-bottom: 16px;
+}
+
+.footer-section .footer-lists .footer-list ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.footer-section .footer-lists .footer-list ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 28px;
+  color: var(--grey-color);
+}
+
+.footer-section hr {
+  border-color: #99999956;
+  margin-bottom: 40px;
+}
+
+.footer-section .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-section .copyright p {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--grey-color);
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.footer-section .copyright p:last-child {
+  text-align: right;
+}
+
+/* footer section - end */
