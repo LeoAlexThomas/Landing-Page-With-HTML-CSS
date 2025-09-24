@@ -130,6 +130,26 @@ button {
   justify-content: flex-start;
 }
 
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+}
+
+.dot-selected {
+  width: 14px;
+  height: 14px;
+  background-color: var(--orange-color);
+}
+
 /* Common style - ends */
 
 /* nav style - start */
@@ -691,3 +711,46 @@ header .outline-button {
 }
 
 /* testimonial section - end */
+
+/* blog section - start */
+.blog-section {
+  background-color: var(--slight-white-color);
+  padding: 120px 16px;
+}
+
+.blog-section .section-header {
+  margin-bottom: 64px;
+}
+
+.blog-section .blog-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.blog-section .blog-cards .blog-card img {
+  width: 270px;
+  height: 270px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.blog-card-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  color: var(--black-color);
+  margin-bottom: 16px;
+}
+
+.blog-card-date {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #999999;
+}
+
+/* blog section - end */
