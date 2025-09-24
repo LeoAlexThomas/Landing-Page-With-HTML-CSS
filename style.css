@@ -43,6 +43,7 @@ button {
   background-color: transparent;
   color: #fd8d3a;
   width: 120px;
+  font-weight: 600;
 }
 
 .primary-button {
@@ -123,10 +124,6 @@ button {
   cursor: unset;
 }
 
-.arrow-position-end {
-  justify-content: flex-end;
-}
-
 .arrow-position-start {
   justify-content: flex-start;
 }
@@ -202,6 +199,7 @@ nav ul li a {
 }
 
 nav .nav-button-group .primary-button {
+  font-weight: 600;
   width: 160px;
 }
 
@@ -242,7 +240,7 @@ header {
 }
 
 .hero-section .right .hero-image {
-  width: 550px;
+  width: 500px;
 }
 
 .hero-section .right .hero-section-planes {
@@ -307,7 +305,7 @@ header .hero-section h1 {
   font-weight: bold;
   line-height: 70px;
   color: var(--black-color);
-  margin: 96px 0px 32px 0px;
+  margin: 46px 0px 32px 0px;
 }
 
 header .hero-section p {
@@ -359,7 +357,9 @@ header .outline-button {
 }
 
 header .search-box button {
+  width: 160px;
   height: 60px;
+  padding: 14px 28px;
 }
 
 /* search box - end */
@@ -656,6 +656,12 @@ header .search-box button {
   height: 16px;
 }
 
+.arrow-custom-position {
+  position: absolute;
+  top: 150px;
+  right: 0;
+}
+
 /* Plan section - end */
 
 /* testimonial section - start */
@@ -923,6 +929,7 @@ header .search-box button {
 }
 
 .subscribe-section form button {
+  font-weight: normal;
   position: absolute;
   right: 10px;
   top: 50%;
