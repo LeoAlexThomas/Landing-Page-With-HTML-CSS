@@ -150,6 +150,10 @@ button {
   background-color: var(--orange-color);
 }
 
+.light {
+  color: #ffffff;
+}
+
 /* Common style - ends */
 
 /* nav style - start */
@@ -754,3 +758,79 @@ header .outline-button {
 }
 
 /* blog section - end */
+
+/* Subscribe section - start */
+
+.subscribe-section {
+  background-color: var(--orange-color);
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+  height: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-section .section-header {
+  max-width: 700px;
+  margin-bottom: 64px;
+}
+
+.subscribe-circle {
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  z-index: 1;
+}
+
+.subscribe-palm_tree {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  z-index: 1;
+}
+
+.subscribe-palm_tree:last-child {
+  right: 45px;
+  top: 33px;
+}
+
+.subscribe-section form {
+  max-width: 700px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+.subscribe-section form input {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 200%;
+  border-radius: 10px;
+  width: 100%;
+  padding: 12px 160px 12px 48px;
+  border: none;
+}
+
+.subscribe-section form input:focus {
+  outline: none;
+}
+
+.subscribe-section form img {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.subscribe-section form button {
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Subscribe section - end */
