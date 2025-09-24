@@ -400,10 +400,12 @@ header .search-box button {
   padding: 40px;
   border-radius: 8px;
   border: 2px solid #66666610;
+  overflow: hidden;
   position: relative;
+  z-index: 2;
 }
 
-.preparation-cards .preparation-card img {
+.preparation-card-image {
   width: 48px;
   height: 48px;
   margin: 0 0 48px 0;
@@ -422,13 +424,14 @@ header .search-box button {
   font-weight: normal;
   line-height: 26px;
   color: var(--grey-color);
-  margin: 0 !important;
 }
 
 .preparation-line {
   position: absolute;
-  width: 100% !important;
-  height: 100% !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: -1;
 }
 
