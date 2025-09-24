@@ -222,21 +222,80 @@ header {
 
 .hero-section {
   display: flex;
-  align-items: self-start;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
+  margin-top: 70px;
 }
 
 .hero-section .left {
   flex: 1;
+  max-width: 530px;
 }
 
 .hero-section .right {
-  align-self: flex-start;
+  position: relative;
+  align-self: center;
 }
 
-.hero-section .right img {
-  width: 600px;
+.hero-section .right .hero-image {
+  width: 550px;
+}
+
+.hero-section .right .hero-section-planes {
+  position: absolute;
+  top: -50px;
+  right: -150px;
+}
+
+.hero-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: -8px 8px 40px #00000010;
+  padding: 9px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-card-position-top-left {
+  position: absolute;
+  top: 80px;
+  left: -45px;
+  width: 160px;
+}
+
+.hero-card-position-center-right {
+  width: 175px;
+  position: absolute;
+  right: 0px;
+  top: 225px;
+}
+
+.hero-card-position-bottom-left {
+  width: 195px;
+  position: absolute;
+  left: -10px;
+  bottom: 145px;
+}
+
+.hero-section .right .hero-card img {
+  width: 32px;
+  height: 32px;
+}
+
+.hero-section .right .hero-card div h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.hero-section .right .hero-card div p {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 20px;
+  margin-bottom: 0;
+  color: var(--grey-color);
 }
 
 header .hero-section h1 {
