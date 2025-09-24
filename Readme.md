@@ -19,6 +19,7 @@ A simple, responsive landing page built using HTML and CSS. This project demonst
 ## Folder Structure
 
 ```
+├── assets
 ├── index.html
 ├── style.css
 └── Readme.md
