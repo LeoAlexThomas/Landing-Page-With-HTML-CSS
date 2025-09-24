@@ -182,6 +182,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 32px 0;
+  gap: 12px;
 }
 
 nav ul {
@@ -219,6 +220,7 @@ nav .nav-button-group .primary-button {
 
 header {
   padding: 0 16px 120px 16px;
+  overflow: hidden;
 }
 
 .hero-section {
@@ -367,6 +369,9 @@ header .search-box button {
 .preparation-section {
   background-color: var(--light-blue-color);
   padding: 120px 16px;
+}
+
+.preparation-section .wrapper {
   position: relative;
 }
 
@@ -380,8 +385,8 @@ header .search-box button {
 .preparation-cards::after {
   content: url("assets/preparation_planes.png");
   position: absolute;
-  top: 120px;
-  right: 450px;
+  top: 0px;
+  right: 80px;
   width: 180px;
   height: 130px;
 }
@@ -562,18 +567,21 @@ header .search-box button {
 .plans-section {
   padding: 120px 16px;
   background-color: var(--slight-white-color);
+}
+
+.plans-section .wrapper {
   position: relative;
 }
 
 .plans-section-tree {
   position: absolute;
-  top: 120px;
-  left: 65%;
+  top: 0px;
+  left: 75%;
 }
 
 .plans-section-tree:last-child {
-  top: 125px;
-  left: 67.5%;
+  top: 5px;
+  left: 79%;
 }
 
 .plan-cards {
@@ -652,13 +660,17 @@ header .search-box button {
 .testimonial-section {
   background-color: var(--light-blue-color);
   padding: 120px 16px 180px;
+  overflow: hidden;
+}
+
+.testimonial-section .wrapper {
   position: relative;
 }
 
 .testimonial-planes {
   position: absolute;
-  top: 40px;
-  right: 280px;
+  top: -90px;
+  right: -60px;
 }
 
 .testimonial-section .testimonial-container {
@@ -833,6 +845,8 @@ header .search-box button {
 .subscription-placement {
   position: absolute;
   top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
@@ -850,6 +864,7 @@ header .search-box button {
   align-items: center;
   z-index: 1;
   width: 100%;
+  overflow: hidden;
 }
 
 .subscribe-section .section-header {
@@ -1018,3 +1033,116 @@ footer .footer-section .footer-lists .footer-intro .website-icon {
 }
 
 /* footer section - end */
+
+/* Media query for responsive */
+
+@media (max-width: 1280px) {
+  /* common style - start */
+  button {
+    padding: 12px 24px;
+  }
+  .wrapper {
+    padding: 0 24px;
+  }
+  /* common style - end */
+
+  /* nav style - start */
+  nav .nav-button-group .primary-button {
+    width: 120px;
+  }
+  /* nav style - end */
+
+  /* hero style - start */
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 0px;
+  }
+  /* hero style - end */
+
+  /* preparation style - start */
+  .preparation-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .preparation-cards::after {
+    content: url("assets/preparation_planes.png");
+    position: absolute;
+    top: -100px;
+    right: 80px;
+    width: 100px;
+    height: 50px;
+  }
+  /* preparation style - end */
+
+  /* offer style - start */
+  .offer-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+  }
+  /* offer style - end */
+
+  /* plan style - start */
+  .plan-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .plans-section-tree {
+    position: absolute;
+    top: 0px;
+    left: 80%;
+  }
+
+  .plans-section-tree:last-child {
+    top: 5px;
+    left: 86%;
+  }
+  /* plan style - end */
+
+  /* testimonial style - start */
+  .testimonial-section {
+    padding: 24px 24px 380px;
+  }
+
+  .testimonial-section .testimonial-container {
+    flex-direction: column;
+  }
+
+  .testimonial-section .testimonial-container .right {
+    align-self: center;
+  }
+
+  .testimonial-planes {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  /* testimonial style - end */
+
+  /* blog style - start */
+  .blog-section .blog-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .blog-section .blog-cards .blog-card {
+    max-width: 270px;
+  }
+  /* blog style - end */
+
+  /* subscription style - start */
+  .subscription-placement {
+    max-width: 750px;
+  }
+  /* subscription style - end */
+}
